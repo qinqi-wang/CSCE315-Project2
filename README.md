@@ -1,5 +1,4 @@
-# Spinning Lightning Aggie Miner Doods (S.L.A.M.D)
 ## Yang Yang, Jacob Wallace, Bill Wang
 ### 315-Project-2
 
-Parser -> Database -> UI
+This is a program used to search for courses a student may wish to take based on criteria like class time, major, professor name, etc.
