@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GUI_SLAMD_.jnlp">
+  <information>
+    <title>GUI(SLAMD)</title>
+    <vendor>Unknown</vendor>
+    <description>GUI(SLAMD)</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GUI_SLAMD_.jar" size="19908" download="eager" />
+    <jar href="mysql-connector-java-5.1.39-bin.jar" size="989497" download="eager" />
+    <jar href="sample\postgresql-9.4.1208.jre6.jar" size="644836" download="eager" />
+    <jar href="sample\postgresql.jar" size="644836" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="600" main-class="sample.Main"  name="GUI(SLAMD)" />
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="postgresql-9.4.1208.jre6">
+    <archive path="C:/Users/Albedofeature/IdeaProjects/GUI(SLAMD)/src/sample/postgresql-9.4.1208.jre6.jar" />
+  </library>
+  <library name="postgresql">
+    <archive path="C:/Users/Albedofeature/IdeaProjects/GUI(SLAMD)/src/sample/postgresql.jar" />
+  </library>
+</eclipse-userlibraries>
+

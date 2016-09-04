@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<!-- required for FXCollections to work-->
+
+<?import javafx.collections.*?>
+
+<!--
+<?import sample.CustomTextField?>
+-->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="370.0" styleClass="layout" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+   <top>
+      <FlowPane hgap="4" prefWrapLength="300" vgap="4">
+         <BorderPane.margin>
+            <Insets left="20.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </top>
+   <center>
+      <FlowPane columnHalignment="LEFT" prefHeight="473.0" prefWidth="350.0" prefWrapLength="100">
+         <children>
+            <Label text="Subjects">
+               <FlowPane.margin>
+                  <Insets right="70.0" top="20.0" />
+               </FlowPane.margin></Label>
+            <ComboBox fx:id="CourseCombo" layoutX="325.0" layoutY="33.0" prefWidth="150.0" promptText="Choose Course">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="ACCT" />
+                     <String fx:value="ADDM" />
+                     <String fx:value="AEGD" />
+                     <String fx:value="AERO" />
+                     <String fx:value="AERS" />
+                     <String fx:value="AFST" />
+                     <String fx:value="AGCJ" />
+                     <String fx:value="AGEC" />
+                     <String fx:value="AGLS" />
+                     <String fx:value="AGSC" />
+                     <String fx:value="AGSM" />
+                     <String fx:value="ALEC" />
+                     <String fx:value="ALED" />
+                     <String fx:value="ANSC" />
+                     <String fx:value="ANTH" />
+                     <String fx:value="ARAB" />
+                     <String fx:value="ARCH" />
+                     <String fx:value="ARTS" />
+                     <String fx:value="ASIA" />
+                     <String fx:value="ASTR" />
+                     <String fx:value="ATMO" />
+                     <String fx:value="ATTR" />
+                     <String fx:value="BAEN" />
+                     <String fx:value="BEFB" />
+                     <String fx:value="BESC" />
+                     <String fx:value="BICH" />
+                     <String fx:value="BIED" />
+                     <String fx:value="BIMS" />
+                     <String fx:value="BIOL" />
+                     <String fx:value="BIOT" />
+                     <String fx:value="BMEN" />
+                     <String fx:value="BUAD" />
+                     <String fx:value="BUSH" />
+                     <String fx:value="BUSN" />
+                     <String fx:value="CARC" />
+                     <String fx:value="CEHD" />
+                     <String fx:value="CHEM" />
+                     <String fx:value="CHEN" />
+                     <String fx:value="CHIN" />
+                     <String fx:value="CLAS" />
+                     <String fx:value="COMM" />
+                     <String fx:value="CPSY" />
+                     <String fx:value="CSCE" />
+                     <String fx:value="CVEN" />
+                     <String fx:value="DASC" />
+                     <String fx:value="DCED" />
+                     <String fx:value="DDHS" />
+                     <String fx:value="DPHS" />
+                     <String fx:value="ECEN" />
+                     <String fx:value="ECMT" />
+                     <String fx:value="ECON" />
+                     <String fx:value="EDAD" />
+                     <String fx:value="EDCI" />
+                     <String fx:value="EDHP" />
+                     <String fx:value="EDTC" />
+                     <String fx:value="EEBL" />
+                     <String fx:value="EHRD" />
+                     <String fx:value="ELIC" />
+                     <String fx:value="ELID" />
+                     <String fx:value="ELIG" />
+                     <String fx:value="ELIL" />
+                     <String fx:value="ELIO" />
+                     <String fx:value="ELIR" />
+                     <String fx:value="ELIT" />
+                     <String fx:value="ENDG" />
+                     <String fx:value="ENDO" />
+                     <String fx:value="ENDS" />
+                     <String fx:value="ENGL" />
+                     <String fx:value="ENGR" />
+                     <String fx:value="ENTC" />
+                     <String fx:value="ENTO" />
+                     <String fx:value="EPFB" />
+                     <String fx:value="EPSY" />
+                     <String fx:value="ESET" />
+                     <String fx:value="ESSM" />
+                     <String fx:value="EURO" />
+                     <String fx:value="FILM" />
+                     <String fx:value="FINC" />
+                     <String fx:value="FIVS" />
+                     <String fx:value="FREN" />
+                     <String fx:value="FSTC" />
+                     <String fx:value="GENE" />
+                     <String fx:value="GEOG" />
+                     <String fx:value="GEOL" />
+                     <String fx:value="GEOP" />
+                     <String fx:value="GEOS" />
+                     <String fx:value="GERM" />
+                     <String fx:value="GS01" />
+                     <String fx:value="GS04" />
+                     <String fx:value="GS11" />
+                     <String fx:value="GS14" />
+                     <String fx:value="GS21" />
+                     <String fx:value="GSMV" />
+                     <String fx:value="GSPY" />
+                     <String fx:value="HCPI" />
+                     <String fx:value="HEFB" />
+                     <String fx:value="HISP" />
+                     <String fx:value="HIST" />
+                     <String fx:value="HLTH" />
+                     <String fx:value="HORT" />
+                     <String fx:value="HPCH" />
+                     <String fx:value="HPED" />
+                     <String fx:value="HUMA" />
+                     <String fx:value="IBST" />
+                     <String fx:value="IBUS" />
+                     <String fx:value="ICPE" />
+                     <String fx:value="IDIS" />
+                     <String fx:value="INST" />
+                     <String fx:value="INTA" />
+                     <String fx:value="INTS" />
+                     <String fx:value="ISEN" />
+                     <String fx:value="ISYS" />
+                     <String fx:value="ITAL" />
+                     <String fx:value="JAPN" />
+                     <String fx:value="JOUR" />
+                     <String fx:value="KINE" />
+                     <String fx:value="KNFB" />
+                     <String fx:value="LAND" />
+                     <String fx:value="LAW" />
+                     <String fx:value="LBAR" />
+                     <String fx:value="LCSE" />
+                     <String fx:value="LDEV" />
+                     <String fx:value="LING" />
+                     <String fx:value="LMAS" />
+                     <String fx:value="MASC" />
+                     <String fx:value="MATH" />
+                     <String fx:value="MCMD" />
+                     <String fx:value="MEEN" />
+                     <String fx:value="MEMA" />
+                     <String fx:value="MEPS" />
+                     <String fx:value="MGMT" />
+                     <String fx:value="MKTG" />
+                     <String fx:value="MLSC" />
+                     <String fx:value="MMET" />
+                     <String fx:value="MODL" />
+                     <String fx:value="MPHY" />
+                     <String fx:value="MPIM" />
+                     <String fx:value="MSCI" />
+                     <String fx:value="MSEN" />
+                     <String fx:value="MUSC" />
+                     <String fx:value="NEXT" />
+                     <String fx:value="NRSC" />
+                     <String fx:value="NUEN" />
+                     <String fx:value="NURS" />
+                     <String fx:value="NUTR" />
+                     <String fx:value="NVSC" />
+                     <String fx:value="OCEN" />
+                     <String fx:value="OCNG" />
+                     <String fx:value="OMFP" />
+                     <String fx:value="OMFR" />
+                     <String fx:value="OMSF" />
+                     <String fx:value="ORTH" />
+                     <String fx:value="PEDD" />
+                     <String fx:value="PERF" />
+                     <String fx:value="PERI" />
+                     <String fx:value="PETE" />
+                     <String fx:value="PHAR" />
+                     <String fx:value="PHEB" />
+                     <String fx:value="PHEO" />
+                     <String fx:value="PHIL" />
+                     <String fx:value="PHLT" />
+                     <String fx:value="PHPM" />
+                     <String fx:value="PHYS" />
+                     <String fx:value="PLAN" />
+                     <String fx:value="PLPA" />
+                     <String fx:value="POLS" />
+                     <String fx:value="POSC" />
+                     <String fx:value="PROS" />
+                     <String fx:value="PSAA" />
+                     <String fx:value="PSYC" />
+                     <String fx:value="RDNG" />
+                     <String fx:value="RELS" />
+                     <String fx:value="RENR" />
+                     <String fx:value="RPTS" />
+                     <String fx:value="RUSS" />
+                     <String fx:value="SABR" />
+                     <String fx:value="SCEN" />
+                     <String fx:value="SCMT" />
+                     <String fx:value="SCSC" />
+                     <String fx:value="SEFB" />
+                     <String fx:value="SENG" />
+                     <String fx:value="SLCX" />
+                     <String fx:value="SOCI" />
+                     <String fx:value="SOMS" />
+                     <String fx:value="SOPH" />
+                     <String fx:value="SPAN" />
+                     <String fx:value="SPED" />
+                     <String fx:value="SPMT" />
+                     <String fx:value="SPSY" />
+                     <String fx:value="STAT" />
+                     <String fx:value="STLC" />
+                     <String fx:value="SYEN" />
+                     <String fx:value="TAMU" />
+                     <String fx:value="TCMG" />
+                     <String fx:value="TEED" />
+                     <String fx:value="TEFB" />
+                     <String fx:value="THAR" />
+                     <String fx:value="UGST" />
+                     <String fx:value="URPN" />
+                     <String fx:value="URSC" />
+                     <String fx:value="VIBS" />
+                     <String fx:value="VIST" />
+                     <String fx:value="VIZA" />
+                     <String fx:value="VLCS" />
+                     <String fx:value="VMID" />
+                     <String fx:value="VPAR" />
+                     <String fx:value="VPAT" />
+                     <String fx:value="VSCS" />
+                     <String fx:value="VTMI" />
+                     <String fx:value="VTPB" />
+                     <String fx:value="VTPP" />
+                     <String fx:value="WFSC" />
+                     <String fx:value="WGST" />
+                     <String fx:value="WMHS" />
+                  </FXCollections>
+               </items>
+               <value>
+                   <String fx:value="" />
+               </value>
+               <FlowPane.margin>
+                  <Insets right="70.0" top="20.0" />
+               </FlowPane.margin>
+            </ComboBox>
+            <Label text="Instructor Name">
+               <FlowPane.margin>
+                  <Insets right="30.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="InstructorName" promptText="Instructor Name">
+               <FlowPane.margin>
+                  <Insets right="50.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="Course Number">
+               <FlowPane.margin>
+                  <Insets right="33.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            
+            <TextField fx:id="CourseNum" layoutX="325.0" layoutY="113.0" promptText="Course Number">
+               <FlowPane.margin>
+                  <Insets right="65.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="Course Title">
+               <FlowPane.margin>
+                  <Insets right="53.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="Title" layoutX="325.0" layoutY="153.0" promptText="Course Title">
+               <FlowPane.margin>
+                  <Insets right="50.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="Section Number">
+               <FlowPane.margin>
+                  <Insets right="30.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="SectionNum" promptText="Section Number">
+               <FlowPane.margin>
+                  <Insets right="60.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="Max Capacity">
+               <FlowPane.margin>
+                  <Insets right="45.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="MaxCap" layoutX="10.0" layoutY="145.0" promptText="Max Capacity">
+               <FlowPane.margin>
+                  <Insets right="80.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="Time Settings">
+               <FlowPane.margin>
+                  <Insets right="5.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <ComboBox fx:id="TimeSetCombo" prefHeight="25.0" prefWidth="140.0" promptText="Time Settings">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="Exact Match" />
+                     <String fx:value="Between Start/End Time" />
+                     <String fx:value="NOT Between Start/End Time" />
+                  </FXCollections>
+               </items>
+                <value>
+                    <String fx:value="" />
+                </value>
+               <FlowPane.margin>
+                  <Insets left="35.0" top="20.0" />
+               </FlowPane.margin>
+            </ComboBox>
+            <Label layoutX="10.0" layoutY="239.0" text="Start Time">
+               <FlowPane.margin>
+                  <Insets right="63.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="StartTime1" prefHeight="25.0" prefWidth="35.0">
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin></TextField>
+            <Label layoutX="167.0" layoutY="374.0" text=":">
+               <FlowPane.margin>
+                  <Insets left="5.0" right="5.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="StartTime2" layoutX="40.0" layoutY="280.0" prefHeight="25.0" prefWidth="35.0">
+               <FlowPane.margin>
+                  <Insets right="20.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <ComboBox fx:id="StartAM" prefHeight="25.0" prefWidth="70.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="AM" />
+                     <String fx:value="PM" />
+                  </FXCollections>
+               </items>
+               <value>
+                  <String fx:value="" />
+               </value>
+               <FlowPane.margin>
+                  <Insets right="60.0" top="20.0" />
+               </FlowPane.margin>
+            </ComboBox>
+            <Label layoutX="13.0" layoutY="284.0" text="End Time">
+               <FlowPane.margin>
+                  <Insets right="67.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="EndTime1" layoutX="107.0" layoutY="280.0" prefHeight="25.0" prefWidth="35.0">
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label layoutX="147.0" layoutY="284.0" text=":">
+               <FlowPane.margin>
+                  <Insets left="5.0" right="5.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="EndTime2" layoutX="155.0" layoutY="280.0" prefHeight="25.0" prefWidth="35.0">
+               <FlowPane.margin>
+                  <Insets right="20.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <ComboBox fx:id="EndAM" layoutX="200.0" layoutY="280.0" prefHeight="25.0" prefWidth="70.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="AM" />
+                     <String fx:value="PM" />
+                  </FXCollections>
+               </items>
+               <value>
+                  <String fx:value="" />
+               </value>
+               <FlowPane.margin>
+                  <Insets right="70.0" top="20.0" />
+               </FlowPane.margin>
+            </ComboBox>
+            <Label text="Course Duration">
+               <FlowPane.margin>
+                  <Insets right="30.0" top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="CourseDur" prefHeight="25.0" prefWidth="110.0" promptText="Course Duration">
+               <FlowPane.margin>
+                  <Insets right="90.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label layoutX="10.0" layoutY="439.0" text="Building Room">
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="BldgRoom" layoutX="127.0" layoutY="435.0" prefHeight="25.0" prefWidth="110.0" promptText="Building Room">
+               <FlowPane.margin>
+                  <Insets left="40.0" right="100.0" top="20.0" />
+               </FlowPane.margin>
+            </TextField>
+            <CheckBox fx:id="Mon" mnemonicParsing="false" onAction="#DaysCheckBox" text="M">
+               <FlowPane.margin>
+                  <Insets left="50.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="Tue" mnemonicParsing="false" onAction="#DaysCheckBox" text="T">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="Wed" layoutX="47.0" layoutY="225.0" mnemonicParsing="false" onAction="#DaysCheckBox" text="W">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="Thu" layoutX="80.0" layoutY="225.0" mnemonicParsing="false" onAction="#DaysCheckBox" text="R">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="Fri" layoutX="118.0" layoutY="225.0" mnemonicParsing="false" onAction="#DaysCheckBox" text="F">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="Sat" mnemonicParsing="false" onAction="#DaysCheckBox" text="S">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="Sun" mnemonicParsing="false" onAction="#DaysCheckBox" text="U">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="20.0" />
+               </FlowPane.margin>
+            </CheckBox>
+            <Button fx:id="Search" mnemonicParsing="false" onAction="#GetQuery" prefHeight="25.0" prefWidth="80.0" text="Search">
+               <FlowPane.margin>
+                  <Insets left="50.0" right="30.0" top="20.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="ResetButton" layoutX="10.0" layoutY="307.0" mnemonicParsing="false" onAction="#ResetField" text="Reset">
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+
+         <BorderPane.margin>
+            <Insets left="10.0" top="10.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </center>
+
+</BorderPane>
